@@ -1,0 +1,107 @@
+h1 {
+    font-weight: bold;
+    color: rgb(121, 77, 28);
+    font-size: 32px;
+}
+p {
+    font-weight: bold;
+    color: rgb(66, 66, 66);
+    font-size: 20px;
+  }
+/*button animasjon*/
+.button {
+    position: relative;
+    background-color: #797979;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .button:after {
+    content: "";
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+/*crisp pixelart*/
+img {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+#robot {
+  position: absolute;
+  right:20px;
+  top:20px;
+}
+#centertext {
+  position: absolute;
+  left:42%;
+  top: -2%;
+}
+
+#result{
+  top: 50%;
+  right: 48%
+}
+#timer {
+  font-size: 40px;
+  left:40%;
+  color: rgb(182, 0, 0);
+
+}
+#winnerthing {
+  position: absolute;
+  font-size: 40px;
+  bottom: 10%;
+}
+
+#robotchoiceshower {
+  position: absolute;
+  right:8%;
+  top:50%;
+}
+#demo {
+  position: absolute;
+  right:88%;
+  top:50%;
+}
+.center{
+  position: absolute;
+  right:42%;
+  text-align: center;
+}
+.chooser{
+  position: absolute;
+  right:36%;
+  text-align: center;
+  bottom: 10%;
+}
+#centerroundcounter{
+  position: absolute;
+  right:49%;
+  text-align: center;
+  top: 10%;
+}
