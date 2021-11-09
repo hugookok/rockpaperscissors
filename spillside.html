@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <script type="module" src="1.js" defer></script>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<audio id="Audio1">
-  <source src="sounds/lose.wav" type="audio/wav">
-</audio>
-<audio id="Audio2">
-  <source src="sounds/win.wav" type="audio/wav">
-</audio>
-<audio id="Audio3">
-  <source src="sounds/draw.mp3" type="audio/mpeg">
-</audio>
-
-
-<h1 id="centertext">Stein saks papir</h1>
-<p id="timer" class="center">!</p>
-<div class="chooser">
-  <button id="rock" class="button" type="button">
-    <img src="img/rock.png" 
-    width="100"
-    height="100"
-  />
-  </button>
-  <button id="paper" class="button" type="button">
-    <img src="img/paper.png" 
-    width="100"
-    height="100"
+  <head>
+    <script type="module" src="1.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!---Setter opp lyd--->
+    <audio id="Audio1">
+      <source src="sounds/lose.wav" type="audio/wav" />
+    </audio>
+    <audio id="Audio2">
+      <source src="sounds/win.wav" type="audio/wav" />
+    </audio>
+    <audio id="Audio3">
+      <source src="sounds/draw.mp3" type="audio/mpeg" />
+    </audio>
+    <!---Setter opp knapper--->
+    <section>
+      <h1 id="centertext">Stein saks papir</h1>
+      <p id="timer" class="center">!</p>
+      <div class="chooser">
+        <button id="rock" class="button" type="button">
+          <img src="img/rock.png" width="100" height="100" />
+        </button>
+        <button id="paper" class="button" type="button">
+          <img src="img/paper.png" width="100" height="100" />
+        </button>
+        <button id="scissors" class="button" type="button">
+          <img src="img/scissors.png" width="100" height="100" />
+        </button>
+      </div>
+    </section>
+    <!---Setter spørsmålstegn og robot, logo og mer--->
+    <img src="img/questionmark.png" id="demo" width="100" height="100" />
+    <img id="robot" src="img/robot.png" width="300" height="300" />
+    <img
+      src="img/logo.png"
+      class="center"
+      id="result"
+      width="100"
+      height="100"
     />
-  </button>
-  <button id="scissors" class="button" type="button">
-    <img src="img/scissors.png" 
-    width="100"
-    height="100"
+    <br />
+    <div id="centerroundcounter">
+      <p>Runde</p>
+      <p id="shii"></p>
+    </div>
+    <img
+      src="img/questionmark.png"
+      id="robotchoiceshower"
+      width="100"
+      height="100"
     />
-  </button>
-</div>
-
-
-<img src = "img/questionmark.png" id="demo" width="100" height="100">
-<img id="robot" src="img/robot.png"
-width="300"
-height="300"
->  
-<img src = "img/logo.png" class="center" id="result" width="100" height="100">
-<br>
-<div id="centerroundcounter">
-  <p>Runde</p><p id="shii"></p>
-</div>
-<img src = "img/questionmark.png" id="robotchoiceshower" width="100" height="100">
-<p id="winnerthing"></p>
-</body>
+    <p id="winnerthing"></p>
+    <footer id="myfooter">laget av Hugo Hubgratok Bugge</footer>
+  </body>
 </html>
